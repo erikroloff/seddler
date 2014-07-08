@@ -3,4 +3,5 @@ class Post < ActiveRecord::Base
   belongs_to :category
   has_many :post_comments
   validates_formatting_of :link_url, using: :url
+  acts_as_votable 
 end
