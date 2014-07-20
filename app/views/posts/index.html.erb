@@ -18,7 +18,7 @@
       <tr>
         <td><%= post.id %></td>
         <td><%= post.title %></td>
-        <td><%= post.link_url %></td>
+        <td><%= link_to post.link_url,post.link_url %></td>
         <td><%= post.notes %></td>
         <td><%=l post.created_at, format: :long %></td>
         <td>
